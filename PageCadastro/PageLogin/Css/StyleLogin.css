@@ -1,0 +1,147 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient( to right, #62def7, #0c6c8b);
+
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, .8);
+    padding: .9em;
+    border-radius: 10px;
+    width: 70%;
+    height: 30em;
+}
+fieldset{
+    border: none;
+}
+legend{
+    width: 20%;
+    margin: auto;
+    position: relative;
+    top: -1em;
+    left: -2vw;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+}
+p{
+    color: #fff;
+    font-size: 1em;
+}
+label{
+    color: #fff;
+}
+.label-Input{
+    position: absolute;
+    top: 0;
+    left: 24%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;/*  qualquer lugar que clicar no input ele irá executar a ação */
+    transition: .5s;
+}
+.inputUser:focus ~ .label-Input, .inputUser:valid ~.label-Input{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;/*  borda que aparece quando clicamos no input */
+    color: #fff;
+    font-size: .9em;
+    letter-spacing: 2px;/*  espaço dos caracteres dentro do input, que o úsuario digita */
+}
+
+#submit{
+    background-image: linear-gradient(to right, rgb(0,92,197), rgb(90,20,220));
+    width: 20%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+    padding: .9em;
+    color: #fff;
+    font-size: .9em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+
+    opacity: .8;
+}
+a{
+    text-align: center;
+    font-size: .9em;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.senha{
+    position: relative;
+    top: 8em;
+    text-align: center;
+    font-size: .8em;
+    color: #cdcdcd;
+}
+.senha a{
+    color: #62def7;
+    text-transform: none;
+}
+.conta{
+    position: relative;
+    top: 8.2em;
+    left: -.3em;
+    text-align: center;
+    font-size: .8em;
+    color: #cdcdcd;
+}
+.conta a{
+    color: #62def7;
+    text-transform: none;
+}
+
+@media screen and (min-width:1200px) {
+    
+    .box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, .8);
+        padding: .9em;
+        border-radius: 10px;
+        width: 40%;
+        height: 35em;
+    }
+    #submit{
+        background-image: linear-gradient(to right, rgb(0,92,197), rgb(90,20,220));
+        width: 20%;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border: none;
+        padding: .9em;
+        color: #fff;
+        font-size: .9em;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+}

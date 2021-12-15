@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes animacao {
+    0%{margin-left: 0; }
+    20%{ margin-left: 0; }
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+    75%{ margin-left: -300%;}
+    95%{ margin-left: -300%;}
+    100%{ margin-left: -400%;}
+}
+.carrossel{
+    display: flex;
+    width: 851px;
+    height: 310px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.carrossel .fotos{
+    width: 600%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.carrossel .fotos img{
+    width: 16.6%;
+}
+/* footer */
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0096c7;
+    height: auto;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    padding-top: 30px;
+    color: white;
+}
+.contatos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.contatos h3{
+    font: 28.8px;
+    font-weight: 400px;
+    line-height: 30px;
+}
+.contatos p{
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.sites{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 20px 0;
+}
+.sites li{
+    margin: 0 10px;
+}
+.sites a{
+    text-decoration: none;
+    color: white;
+}
+.sites a i{
+    font-size: 17.6px;
+}
+.sites a:hover{
+    color: lightblue;
+}
+h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 20px 0;
+}
+.pagamento{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 20px 0;
+}
+.pagamento li{
+    margin: 0 10px;
+}
+.pagamento i{
+    font-size: 17.6px;
+}
+.atendimento{
+    display: flex;
+    margin: 16px 0 20px 0;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 5px;
+}
+.atendimento h5{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+    padding-left: 5px;
+}
+.atendimento a{
+    color: white;
+    font-size: 14px;
+}
+.atendimento a:hover{
+    color: lightblue;
+}
+.copyright{
+    background: #00b4b8;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+.copyright{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+.sobre{
+    display: flex;
+    font: 16px Arial, sans-serif;
+    text-align: left;
+    width: 90%;
+    height: 50%;
+    color: #fff;
+    background: #0096c7;
+    padding: 32PX 30PX;
+    border-radius: 15px;
+    position: relative;
+    top: 2em;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+/*  FOOTER */
+footer{
+    position: relative;
+    top: 19em;
+    background-color: #0096c7;
+    height: auto;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    padding-top: 30px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.contatos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+}
+.contatos h3{
+    font: 28.8px;
+    font-weight: 400px;
+    line-height: 30px;
+}
+.contatos p{
+    margin: 5px auto;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    left: -1.2em;
+}
+
+.sites{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 16px 0 20px 0;
+}
+.sites li{
+    margin: 0 10px;
+}
+.sites a{
+    text-decoration: none;
+    color: white;
+}
+.sites a i{
+    font-size: 17.6px;
+}
+.sites a:hover{
+    color: lightblue;
+}
+h5{
+    margin-top: .9em;
+}
+.pagamento{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 0px 0;
+}
+.pagamento li{
+    margin: 0 10px;
+}
+.pagamento i{
+    font-size: 17.6px;
+}
+.copyright{
+    background: #00b4d8;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+.copyright{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}

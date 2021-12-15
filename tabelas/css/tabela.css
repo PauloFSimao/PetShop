@@ -1,0 +1,240 @@
+*{
+	font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.colspan1{
+	text-align:center;
+	background-color:#00b4b8;
+}
+.colspan2{
+	text-align:center;
+	background-color:#0096c7;
+}
+.img1, .img2, .img3, .img4, .img5, .img6{
+	width:100%;
+}
+td{
+	border:1px solid black;
+}
+table{
+	border-collapse:collapse;
+	margin:50px auto;
+}
+.titulos{
+	text-align:center;
+	background-color: #0096c7;
+}
+.col2{
+	width:85px;
+}
+.tabela1 a{
+	padding:5px;
+	background-color:green;
+	text-decoration:none;
+	color:white;
+	border-radius:5px;
+}
+.logo2{
+	width:20%;
+}
+.footer{
+	background-color: #0096c7;
+}
+
+footer{
+    background-color: #0096c7;
+    height: auto;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    padding-top: 30px;
+    color: white;
+    box-sizing: border-box;
+}
+.contatos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+}
+.contatos h3{
+    font: 28.8px;
+    font-weight: 400px;
+    line-height: 30px;
+}
+.contatos p{
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.sites{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 16px 0 20px 0;
+}
+.sites li{
+    margin: 0 10px;
+}
+.sites a{
+    text-decoration: none;
+    color: white;
+	background-color: #0096c7;
+}
+.sites a i{
+    font-size: 17.6px;
+}
+.sites a:hover{
+    color: lightblue;
+}
+h5{
+    margin-top: .9em;
+}
+.pagamento{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 0px 0;
+}
+.pagamento li{
+    margin: 0 10px;
+}
+.pagamento i{
+    font-size: 17.6px;
+}
+.contato{
+   width: 25%;
+   position: relative;
+   top: -8.8em;
+}
+
+.copyright{
+    background: #00b4d8;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+.copyright{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+header{
+    
+    width: 100%;
+    height: 15em;
+    background-color: #00b4d8;
+    z-index: 1200;
+}
+/*  Iniciando Menu */
+
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1em;
+}
+
+.icon-lupa{
+    width: 2em;
+    height: 2.1em;
+    background-color: #0096c7;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-top: 3px;
+    padding-left: 3px;
+    z-index: 999;
+}
+
+.input-pequisa{
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 3em;
+    left: -4em;
+    right: 0;
+}
+.input-pequisa input{
+    width: 50vw;
+    height: 2.5em;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: none;
+    padding-left: 1em;
+    z-index: 999;
+    outline: none;
+}
+
+
+.btn-cadastro{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    top: 1em;
+    
+}
+.btn-cadastro a{
+    position: relative;
+    right: 8vw;
+    top: -1em;
+    text-decoration: none;
+    padding: 0.9em;
+    font-size: 1.2em;
+    color: #fff;
+    border-radius: 0.9em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.car-buy img{
+    position: relative;
+    right: 2vw;
+    top: -.5em;
+    width: 2em;
+    height: 2em;
+    color: #fff;
+    cursor: pointer ;
+}
+.Desktop{
+    display: inline-block;
+    width: 100%;
+    background-color: #0096c7;
+}
+.Desktop > ul{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all .8s ease-in-out; 
+    
+}
+.Desktop ul > li{
+
+    display: inline-block;
+    margin: 2em 2em;
+}
+  /*  Links da li */
+  .links{
+
+    text-decoration: none;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+
+}
+.links:hover{
+    opacity: .8;
+}

@@ -1,0 +1,100 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient( to right, #62def7, #0c6c8b);
+
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, .8);
+    padding: .9em;
+    border-radius: 10px;
+    width: 80%;
+}
+fieldset{
+    border: none;
+}
+legend{
+    width: 20%;
+    margin: auto;
+    position: relative;
+    top: -8vh;
+    left: -2vw;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+}
+p{
+    color: #fff;
+    font-size: 1em;
+}
+label{
+    color: #fff;
+}
+.label-Input{
+    position: absolute;/*  faz parte da animação */
+    top: 0;
+    left: 0;
+    pointer-events: none;/*  qualquer lugar que clicar no input ele irá executar a ação */
+    transition: .5s;
+}
+.inputUser:focus ~ .label-Input, .inputUser:valid ~.label-Input{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;/*  borda que aparece quando clicamos no input */
+    color: #fff;
+    font-size: .9em;
+    letter-spacing: 2px;/*  espaço dos caracteres dentro do input, que o úsuario digita */
+}
+#data-nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+    outline: none;
+    font-size: .9em;
+}
+
+#submit{
+    background-image: linear-gradient(to right, rgb(0,92,197), rgb(90,20,220));
+    width: 100%;
+    border: none;
+    padding: .9em;
+    color: #fff;
+    font-size: .9em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+
+    opacity: .8;
+}
+@media screen and (min-width:600px) {.box{width: 50%;}}
+
+@media screen and (min-width:900px) {.box{height: 80vh;}}
+@media screen and (min-width:1200px) {
+    .box{
+        height: 90vh;
+        width: 40vw;
+    }
+    .inputBox{
+        position: relative;
+        top: -2vh;
+        margin-bottom: 5px;
+    }
+}

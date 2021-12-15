@@ -1,0 +1,908 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*  EDITANDO A SCROLL DA PÁGINA */
+html{
+
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    width: 0.5em;
+    height: 1px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #00b4d8;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #0096c7;
+    height: 1px;
+    border-radius: 50px;
+}
+
+@keyframes animacao {/*  Carrossel */
+    0%{margin-left: 0; }
+    20%{ margin-left: 0; }
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+    75%{ margin-left: -300%;}
+    95%{ margin-left: -300%;}
+    100%{ margin-left: -400%;}
+}
+
+
+header{
+    
+    width: 100%;
+    height: 15em;
+    background-color: #00b4d8;
+    z-index: 1200;
+    position: fixed;
+}
+/*  Iniciando Menu */
+
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1em;
+}
+
+.icon-lupa{
+    width: 2em;
+    height: 2.1em;
+    background-color: #0096c7;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-top: 3px;
+    padding-left: 3px;
+    z-index: 999;
+}
+
+.input-pequisa{
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 3em;
+    left: -4em;
+    right: 0;
+}
+.input-pequisa input{
+    width: 50vw;
+    height: 2.5em;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: none;
+    padding-left: 1em;
+    z-index: 999;
+    outline: none;
+}
+
+
+.btn-cadastro{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    top: 1em;
+    
+}
+.btn-cadastro a{
+    position: relative;
+    right: 8vw;
+    top: -1em;
+    text-decoration: none;
+    padding: 0.9em;
+    font-size: 1.2em;
+    color: #fff;
+    border-radius: 0.9em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.car-buy img{
+    position: relative;
+    right: 2vw;
+    top: -.5em;
+    width: 2em;
+    height: 2em;
+    color: #fff;
+    cursor: pointer ;
+}
+.Desktop{
+    display: inline-block;
+    width: 100%;
+}
+.Desktop > ul{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all .8s ease-in-out; 
+    
+}
+.Desktop ul > li{
+
+    display: inline-block;
+    margin: 2em 2em;
+}
+  /*  Links da li */
+  .links{
+
+    text-decoration: none;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+
+}
+.links:hover{
+    opacity: .8;
+}
+details{
+
+    text-decoration: none;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+summary{
+
+    margin-bottom: 15px;
+}
+.links-pecos{
+    background-color: #0096c7;
+    padding: .9em;
+    display: block;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+/*  Iniciando Carrossel */
+.carrossel{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    top: 15em;
+  
+}
+.carrossel .fotos{
+    width: 600%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.carrossel .fotos img{
+    width: 16.64%;
+}
+
+
+.servicos{
+   width: 100%;
+   position: relative;
+   top: 40em;
+}
+.servicos h1{
+    height: 2em;
+    text-align: center;
+    font-size: 4em;
+    color: #0096c7;
+    font-weight: bolder;
+    margin-bottom: .9em;
+    
+}
+.servicos p{
+    padding: 1.2em;
+    text-align: center;
+}
+.servicos section{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.cadastro-email{
+
+
+    width: 90%;
+    margin: 0 auto;
+    height: 10em;
+    position: relative;
+    top: 50em;
+    text-align: center;
+    background-color: #00b4d8;
+    border-radius: 8px;
+}
+.cadastro-email div > h4{
+
+    width: 30%;
+    position: relative;
+    top: 3em;
+    left: 2em;
+    float: left;
+    font-size: .9em;
+    text-align: center;
+    color: #fff;
+}
+
+.cadastro-email div > input{
+    position: relative;
+    top: 3em;
+    width: 20em;
+    height: 2em;
+    margin: 0 auto;
+    border-radius: 5px;
+    outline: none;
+    color: #000;
+    border: none;
+    padding: 5px;
+}
+.cadastro-email div > a{
+    position: relative;
+    top: 4em;
+    background-color: #fff;
+    padding: .8em;
+    color: #0096c7;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+
+.produtos{
+    position: relative;
+    top: 58em;
+    width: 80%;
+    margin: 0 auto ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.produtos section{
+    width: 300px;
+    text-align: center;
+    margin:5px auto;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+.produtos section h2{
+    display: inline-block;
+    color:red;
+    background-color:#d9d9d9;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 3px auto;
+}  
+
+.mapa{
+    width: 95%;
+    position: relative;
+    top: 65em;
+    left: 3%;
+    right: 3%;
+}
+.mapa iframe{
+    width: 100%;
+   border-radius: 4px;
+    
+}
+
+
+footer{
+    position: relative;
+    top: 75em;
+    background-color: #0096c7;
+    height: auto;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    padding-top: 30px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.contatos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+}
+.contatos h3{
+    font: 28.8px;
+    font-weight: 400px;
+    line-height: 30px;
+}
+.contatos p{
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.sites{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 16px 0 20px 0;
+}
+.sites li{
+    margin: 0 10px;
+}
+.sites a{
+    text-decoration: none;
+    color: white;
+}
+.sites a i{
+    font-size: 17.6px;
+}
+.sites a:hover{
+    color: lightblue;
+}
+h5{
+    margin-top: .9em;
+}
+.pagamento{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 0px 0;
+}
+.pagamento li{
+    margin: 0 10px;
+}
+.pagamento i{
+    font-size: 17.6px;
+}
+.copyright{
+    background: #00b4d8;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+.copyright{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+@media screen and (max-width:550px) {
+    header{
+        height: 18em;
+    }
+    .servicos{
+        width: 100%;
+        position: relative;
+        top: 30em;
+     }
+    .icon-lupa{
+        width: 2em;
+        height: 2.1em;
+        background-color: #0096c7;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 3px;
+        padding-left: 3px;
+        z-index: 999;
+    }
+    
+    .input-pequisa{
+        
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 3em;
+        left: 0em;
+        right: 0;
+    }
+    .Desktop ul > li{
+
+        display: inline-block;
+        margin: 5em .8em;
+    }
+    .btn-cadastro{
+        display: inline-block;
+        position: relative;
+        top: 5em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+   
+    .carrossel{
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius:8px ;
+        position: absolute;
+        top: 18em;
+    }
+    .produtos{
+        position: relative;
+        top: 58em;
+        width: 90%;
+        margin: 0 auto ;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .produtos section > img{
+
+        width: 50%;
+    }
+
+    .cadastro-email{
+
+        width: 90%;
+        margin: 0 auto;
+        height: 14em;
+        position: relative;
+        top: 50em;
+        text-align: center;
+        background-color: #00b4d8;
+        border-radius: 8px;
+    }
+    .cadastro-email div > h4{
+    
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        font-size: .7em;
+        text-align: center;
+        color: #fff;
+        
+    }
+    
+    .cadastro-email div > input{
+        position: relative;
+        top: 5em;
+        width: 18em;
+        height: 2em;
+        border-radius: 8px;
+        outline: none;
+        color: #000;
+        border: none;
+        padding: 3px;
+    }
+    .cadastro-email div > a{
+        position: relative;
+        top: 6em;
+        background-color: #fff;
+        padding: .8em;
+        color: #0096c7;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        text-transform: uppercase;
+    
+    }
+}
+
+
+@media screen and (min-width:900px) {
+    header{
+    
+        width: 100%;
+        height: 10em;
+        background-color: #00b4d8;
+        
+    }
+    .logo{
+        width: 20%;
+        position: relative;
+        top: 1.5em;
+        left: 0;
+        margin: 0;
+        float: left;
+    }
+   
+    .icon-lupa{
+        width: 2em;
+        height: 2.1em;
+        background-color: #0096c7;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 3px;
+        padding-left: 3px;
+        z-index: 999;
+        position: relative;
+        top: 1.7em;
+        left: -4em;
+    }
+
+    .input-pequisa{
+        
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 2em;
+        left: -2em;
+    }
+    .input-pequisa input{
+        width: 50vw;
+        height: 2.5em;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        border: none;
+        padding-left: 1em;
+        z-index: 999;
+        position: relative;
+        top: 2em;
+        left: -4em;
+    }
+
+
+    .btn-cadastro{
+
+        display: flex;
+        justify-content: right;
+        text-align: center;
+        position: relative;
+        top: 2em;
+    }
+    .btn-cadastro a{
+        position: relative;
+        right: 5vw;
+        top: -1em;
+        text-decoration: none;
+        padding: 0.9em;
+        font-size: 1.2em;
+        color: #fff;
+        border-radius: 0.9em;
+    }
+    .car-buy img{
+        position: relative;
+        right: 3vw;
+        top: -.5em;
+        width: 2em;
+        height: 2em;
+        color: #fff;
+        cursor: pointer ;
+    }
+    .Desktop{
+        display: inline-block;
+        width: 100%;
+        height: 3em;
+        position: absolute;
+        top: 7em;
+        background-color: #0096c7;
+        transition: all .5s ease-in; 
+    }
+    .Desktop > ul{
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transition: all .8s ease-in-out; 
+        
+    }
+    .Desktop ul > li{
+
+        display: inline-block;
+        margin: 1em 2em;
+    }
+    /*  Links da li */
+    .links{
+
+        text-decoration: none;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+
+    }
+    .links:hover{
+        opacity: .8;
+    }
+    .Mobile{
+        display: none;
+    }
+
+    .carrossel{
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius:8px ;
+        position: absolute;
+        top: 10em;
+    }
+
+    .servicos{
+        width: 100%;
+        display: flex;
+        /*  flex-direction: row; */
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .servicos h1{
+        display: block;
+        width: 100%;
+    }
+    .servicos section{
+        width: 40%;
+        margin: 2em auto;
+    }
+
+
+    .produtos{
+        position: relative;
+        top: 58em;
+        width: 100%;
+        margin: 0 auto ;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .produtos section{
+        
+        width: 300px;
+        text-align: center;
+        margin:5px auto;
+        border-radius: 10px;
+        background-color: #f2f2f2;
+    }
+    .produtos section h2{
+        display: inline-block;
+        color:red;
+        background-color:#d9d9d9;
+        border-radius: 8px;
+        padding: 5px;
+        margin: 3px auto;
+    }  
+}
+@media screen and (min-width:1200px) {
+    .scrolling-active{
+        position: fixed;
+        top: 0;
+     }
+    header{
+    
+        width: 100%;
+        height: 7em;
+        background-color: #00b4d8;
+        
+    }
+    .logo{
+        
+        width: 30%;
+        float: left;
+        position: relative;
+        top: 1.5em;
+        left: 0;
+    }
+    .logo h1{
+        color: #fff;
+    }
+
+    .icon-lupa{
+        width: 2em;
+        height: 2.1em;
+        background-color: #0096c7;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 3px;
+        padding-left: 3px;
+        z-index: 999;
+    }
+
+    .input-pequisa{
+        
+        width: 50%;
+        position: relative;
+        top: 1em;
+    }
+    .input-pequisa input{
+        width: 40vw;
+        height: 2.5em;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        border: none;
+        padding-left: 1em;
+        z-index: 999;
+    }
+
+    .btn-cadastro{
+
+        display: flex;
+        justify-content: right;
+        text-align: center;
+        position: relative;
+        top: 1.2em;
+    }
+    .btn-cadastro a{
+        position: relative;
+        right: 10vw;
+        top: -1em;
+        text-decoration: none;
+        padding: 0.9em;
+        font-size: 1.2em;
+        color: #fff;
+        border-radius: 0.9em;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .car-buy img{
+        position: relative;
+        right: 8vw;
+        top: -.5em;
+        width: 2em;
+        height: 2em;
+        color: #fff;
+        cursor: pointer ;
+    }
+
+    .Desktop{
+        display: inline-block;
+        width: 100%;
+        height: 3em;
+        position: absolute;
+        top: 7em;
+        background-color: #0096c7;
+        transition: all .5s ease-in; 
+    }
+    .Desktop > ul{
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transition: all .8s ease-in-out; 
+        
+    }
+    .Desktop ul > li{
+
+        display: inline-block;
+        margin: 1em 2em;
+    }
+    /*  Links da li */
+    .links{
+
+        text-decoration: none;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+
+    }
+    .links:hover{
+        opacity: .8;
+    }
+   
+    .carrossel{
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius:8px ;
+        position: absolute;
+        top: 10em;
+    }
+
+    .servicos{
+        width: 100%;
+        display: flex;
+        /*  flex-direction: row; */
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .servicos h1{
+        margin-top: 3em;
+        display: block;
+        width: 100%;
+    }
+    .servicos section{
+        width: 20%;
+        margin: 1em auto;
+    }
+
+
+    .produtos{
+        position: relative;
+        top: 58em;
+        width: 100%;
+        margin: 0 auto ;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .produtos section{
+
+        border-radius: 10px;
+        background-color: #f2f2f2;
+        width: 190px;
+        height: 18em;
+        text-align: center;
+        margin:5px auto;
+    }
+    .produtos section > img{
+
+        width: 50%;
+    }
+    .produtos section h2{
+        display: inline-block;
+        color:red;
+        background-color:#d9d9d9;
+        border-radius: 8px;
+        padding: 5px;
+        margin: 3px auto;
+    }  
+   
+    .cadastro-email div > a{
+        position: relative;
+        top: 1em;
+        right: 15em;
+        background-color: #fff;
+        padding: .8em;
+        color: #0096c7;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        text-transform: uppercase;
+        float: right;
+    }
+    .cadastro-email div > h4{
+
+        width: 30%;
+        position: relative;
+        top: 2.6em;
+        left: 2em;
+        float: left;
+        font-size: 1.4em;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .cadastro-email div > input{
+        position: relative;
+        top: 4em;
+        left: -8em;
+        width: 35em;
+        height: 2.5em;
+        margin: 0 auto;
+        border-radius: 8px;
+        outline: none;
+        color: #000;
+        border: none;
+        padding: 3px;
+    }
+}
+@media screen and (min-width:1900px) {.servicos h1{margin-top: 4em;} .produtos section{width: 250px;height: 18em;}}
+
+
+.SemMenu{
+    display: none;
+    transition: all .6s ease-in-out;
+}
+
+
+
+.Abrir{display: block}
